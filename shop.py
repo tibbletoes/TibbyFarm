@@ -1,6 +1,6 @@
 
-from main import PlayerInv
-from main import Player
+from player import PlayerInv
+from player import Player
 from items import Seeds
 
 
@@ -8,15 +8,15 @@ def Shop():
   print("Welcome! What can I do for ya'?")
   choice = input("\n [1] Buy \n [2] Sell \n [3] Leave")
   if choice == "1":
-    print(f'[1] {WheatSeeds}')
-    print(f'[2] {BlueberrySeeds}')
-    print(f'[3] {HyacinthSeeds}')
-    print(f'[4] {RaspberrySeeds}')
-    print(f'[5] {StrawberrySeeds}')
-    print(f'[6] {WatermelonSeeds}')
-    print(f'[7] {PearSapling}')
-    print(f'[8] {CherrySapling}')
-    print(f'[9] {LemonSapling}')
+    print(f'[1] {Seeds.WheatSeeds}')
+    print(f'[2] {Seeds.BlueberrySeeds}')
+    print(f'[3] {Seeds.HyacinthSeeds}')
+    print(f'[4] {Seeds.RaspberrySeeds}')
+    print(f'[5] {Seeds.StrawberrySeeds}')
+    print(f'[6] {Seeds.WatermelonSeeds}')
+    print(f'[7] {Seeds.PearSapling}')
+    print(f'[8] {Seeds.CherrySapling}')
+    print(f'[9] {Seeds.LemonSapling}')
     print("[10] Leave")
     choice = input("What would you like to buy?")
     if choice == "1" and Player.currency >= WheatSeeds.price:

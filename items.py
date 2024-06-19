@@ -5,7 +5,7 @@ class Item:
 
 
 class Seeds(Item):
-  WheatSeeds = Item("Wheat Seeds", 35, "Can be planted to grow wheat.")]
+  WheatSeeds = Item("Wheat Seeds", 35, "Can be planted to grow wheat.")
   BlueberrySeeds = Item("Blueberry Seeds", 40, "Can be planted to grow blueberries.")
   HyacinthSeeds = Item("Hyacinth Seeds", 50, "Can be planted to grow Hyacinths.")
   RaspberrySeeds = Item("Raspberry Seeds", 60, "Can be planted to grow raspberries.")

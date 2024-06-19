@@ -1,10 +1,10 @@
 #Tibby farming game 
-import items
+from shop import Shop
 import sys
 
 class Farmer:
   def __init__(self, currency):
-    self.currency = 0
+    self.currency = currency
 
   def AddCurrency(self, amount):
     self.currency += amount
@@ -29,9 +29,6 @@ class Inventory:
   def ShowInventory(self):
     print(self.inventory)
 
-Player = Farmer(500)
-PlayerInv = Inventory()
-
 
 def MainMenu():
   print("\n [1] Farm \n [2] Inventory \n [3] Shop \n [4] Quit")           
@@ -41,7 +38,7 @@ def MainMenu():
   elif choice == "2":
     pass
   elif choice == "3":
-    items.Shop()
+    Shop()
   elif choice == "4":
     print("Whatever, Hater.")
     sys.exit()
