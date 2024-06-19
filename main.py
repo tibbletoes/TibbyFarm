@@ -1,11 +1,7 @@
 #Tibby farming game 
 import sys
-#hdgvfjshf
-#v;ah sjaa
 
-#teest as asffj
-
-class Player:
+class Farmer:
   def __init__(self):
     self.name = "name"
     self.currency = 500
@@ -24,8 +20,9 @@ class Player:
 
 
 class Item:
-  def __init__(self, name, price, description):
+  def __init__(self, name, quantity, price, description):
     self.name = name
+    self.quantity = quantity
     self.price = price
     self.description = description
 
@@ -56,5 +53,4 @@ def MainMenu():
   elif choice == "4":
     print("Whatever, Hater.")
     sys.exit()
-    
-    
+
