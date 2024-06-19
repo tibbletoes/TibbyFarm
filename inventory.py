@@ -1,6 +1,6 @@
 
 
-class Farmer:
+class Money:
   def __init__(self, currency):
     self.currency = currency
 
@@ -30,5 +30,5 @@ class Inventory:
 pass
 
 
-PlayerBal = Farmer(500)
+PlayerBal = Money(600)
 PlayerInv = Inventory()

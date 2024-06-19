@@ -1,4 +1,5 @@
 #Tibby farming game 
+from inventory import PlayerBal
 from shop import Shop
 import sys
 
@@ -9,6 +10,7 @@ def MainMenu():
   if choice == "1":
     pass
   elif choice == "2":
+    ShowCurrency(PlayerBal)
     pass
   elif choice == "3":
     Shop()

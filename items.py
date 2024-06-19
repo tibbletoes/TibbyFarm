@@ -1,5 +1,5 @@
 
-class Item:
+'''class Item:
   def __init__(self, name, price, description):
     pass
 
@@ -22,5 +22,5 @@ Strawberry = Item("Strawberry", 180, "Can be sold at the shop.")
 Watermelon = Item("Watermelon", 175, "Can be sold at the shop.")
 Pear = Item("Pear", 300, "Can be sold at the shop.")
 Cherry = Item("Cherry", 310, "Can be sold at the shop.")
-Lemon = Item("Lemon", 300, "Can be sold at the shop.")
+Lemon = Item("Lemon", 300, "Can be sold at the shop.")'''
 
