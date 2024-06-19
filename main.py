@@ -1,13 +1,10 @@
 #Tibby farming game 
+import items
 import sys
 
 class Farmer:
-  def __init__(self):
-    self.name = "name"
-    self.currency = 500
-
-  def SetName(self):
-    self.name = input("What is your name?")
+  def __init__(self, currency):
+    self.currency = 0
 
   def AddCurrency(self, amount):
     self.currency += amount
@@ -18,14 +15,7 @@ class Farmer:
   def ShowCurrency(self):
     print(f'Balance: {self.currency}')
 
-
-class Item:
-  def __init__(self, name, quantity, price, description):
-    self.name = name
-    self.quantity = quantity
-    self.price = price
-    self.description = description
-
+Player = Farmer(500)
 
 class Inventory:
   def __init__(self):
@@ -40,6 +30,30 @@ class Inventory:
   def ShowInventory(self):
     print(self.inventory)
 
+
+def Shop(Item):
+  print("Welcome! What can I do for ya'?")
+  choice = input("[1] Buy \n [2] Sell \n [3] Leave")
+  if choice == "1":
+    print(f'[1] {WheatSeeds}')
+    print(f'[2] {BlueberrySeeds}')
+    print(f'[3] {HyacinthSeeds}')
+    print(f'[4] {RaspberrySeeds}')
+    print(f'[5] {StrawberrySeeds}')
+    print(f'[6] {WatermelonSeeds}')
+    print(f'[7] {PearSapling}')
+    print(f'[8] {CherrySapling}')
+    print(f'[9] {LemonSapling}')
+    print("[10] Leave")
+    choice = input("What would you like to buy?")
+    if choice == "1":
+      amtchoice = input("How many would you like to buy?")
+      if amtchoice * WheatSeeds.price <= Player.currency:
+        Player.SubCurrency(amtchoice * WheatSeeds.price)
+        Inventory.AddItem(amtchoice * WheatSeeds)
+      else:
+        print("You don't have enough money!")
+      
 
 def MainMenu():
   print("[1] Farm \n [2] Inventory \n [3] Shop \n [4] Quit")           
